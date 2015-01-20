@@ -19,3 +19,24 @@ System.out.println("robertocarloos");
     }
     
 }
+
+
+
+
+
+#include <stdio.h> 
+ #include <stdlib.h> 
+ int main(void) { 
+ int numero1, numero2, numero3; 
+ int multiplicacion; 
+ printf("masa: "); 
+ scanf("%d", &numero1); 
+ printf("altura: "); 
+ scanf("%d", &numero2); 
+ printf("altura: "); 
+ scanf("%d", &numero3); 
+ imc = numero1 / numero2 * numero3; 
+ printf("\nimc: %d\n", imc); 
+ getchar(); getchar(); 
+ return 0; 
+ } 
