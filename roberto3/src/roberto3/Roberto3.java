@@ -9,7 +9,7 @@ public void imc()
     String num1,num2;
     int n1,n2,imc;
     
-    num1=JOptionPane.showInputDialog("dame la mas");
+    num1=JOptionPane.showInputDialog("dame hola");
     num2=JOptionPane.showInputDialog("dame la altura");
     
     n1=Integer.parseInt(num1);
