@@ -5,10 +5,7 @@
  */
 package octaco.java.cap1;
 
-/**
- *
- * @author T-107
- */
+
 public class Imc {
    private float estatura;
    private  float peso;
@@ -21,7 +18,7 @@ public class Imc {
    this.estatura=estatura;
  
 }
-public float calcular (){
+public float calcular(){
     return peso/(estatura*estatura);
    
     
