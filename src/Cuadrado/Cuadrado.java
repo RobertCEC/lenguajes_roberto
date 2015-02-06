@@ -2,8 +2,8 @@ package Cuadrado;
 
 
 public class Cuadrado {
-    private int lado;
-    public void setLado(int lado){
+     int lado;
+     void setLado(int lado){
         this.lado=lado;
     }
     public int getLado(){
@@ -13,4 +13,12 @@ public class Cuadrado {
         int area= lado*lado;
         return area;
     }
+    
+    public Cuadrado(){
+        lado=4;
+    }
+    public Cuadrado (int lado){
+     this.lado=lado;   
+    }
+    
 }

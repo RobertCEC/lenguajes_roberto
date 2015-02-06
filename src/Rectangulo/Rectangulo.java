@@ -1,8 +1,8 @@
 package Rectangulo;
 
 public class Rectangulo {
-    private int ladomayor;
-    private int ladomenor;
+     int ladomayor;
+     int ladomenor;
     
     public void setLadomayor(int ladomayor){
         this.ladomayor=ladomayor;
@@ -18,9 +18,18 @@ public class Rectangulo {
     }
     
     
-    public int calculatArea1(){
+    public int calculatArea(){
         int area= ladomayor*ladomenor;
         return area;
     }
     
+    public Rectangulo(){
+        ladomayor=40;
+        ladomenor=20;
+    }
+    
+     public Rectangulo(int ladomayor, int ladomenor){
+     this.ladomayor=ladomayor;
+     this.ladomenor=ladomenor;
+    }
 }
