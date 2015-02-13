@@ -4,6 +4,14 @@ public class Cuadrado {
   
     private float lado;
     
+    public Cuadrado(float lado){
+        this.lado=lado;
+    }
+    
+    public Cuadrado(){
+        
+    }
+            
     float calcularArea(){
     float area=lado*lado;
     return area;
