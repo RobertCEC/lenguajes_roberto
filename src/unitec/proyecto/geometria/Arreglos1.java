@@ -1,6 +1,8 @@
 
 package unitec.proyecto.geometria;
 
+import org.omg.PortableInterceptor.SYSTEM_EXCEPTION;
+
 public class Arreglos1 {
      
     public static void main(String[] args) {
@@ -17,9 +19,19 @@ public class Arreglos1 {
         x[2]=-23;
         //[3]=12;
         
-        for(int i=0;i<x.length;i++){
+        // multiplr lineas de comentario /* */ con for antiguo
+        /*for(int i=0;i<x.length;i++){
             System.out.print(x[i]);
-        }
+        }*
+        System.out.println("si ocurre la exepcion"
+                + "nunca me veras");*/
+        
+        for(int algodon:x){
+        System.out.println(algodon);
+    }
+        int a=2;
+        float b=0;
+        System.out.println(a/b);
     }
   
 }
