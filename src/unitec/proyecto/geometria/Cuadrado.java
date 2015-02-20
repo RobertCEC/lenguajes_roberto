@@ -4,15 +4,17 @@ public class Cuadrado {
   
     private float lado;
     
-    /**
-     *este es un constructor de tipo flotante 
-     * @param lado  este parametro que debes de ingresar
-     * es el valor de lado
-     */
-    public Cuadrado(float lado){
+    public Cuadrado(float lado) throws NumeroNoNegativoException {
+        ValidarValorNoNegativo.validar(lado);
         this.lado=lado;
     }
     
+    /**
+     *este es un constructor de tipo flotante 
+     * @param lado  este parametro que debes de ingresarh
+     * es el valor de lado
+     */
+  
     public Cuadrado(){
         
     }
@@ -27,7 +29,8 @@ public class Cuadrado {
         return lado;
     }
 
-    public void setLado(float lado) {
+    public void setLado(float lado) throws NumeroNoNegativoException {
+        ValidarValorNoNegativo.validar(lado);
         this.lado = lado;
     }
 }
