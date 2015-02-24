@@ -22,9 +22,6 @@ public class circulo implements Superficie{
         this.radio = radio;
     }
 
-    @Override
-    public float calcularArea() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+
 }
 

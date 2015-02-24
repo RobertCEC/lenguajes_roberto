@@ -1,4 +1,4 @@
-package Rectangulo;
+package unitec.proyecto.geometria;
 
 public class Triangulo {
     
