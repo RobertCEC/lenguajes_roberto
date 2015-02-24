@@ -20,8 +20,7 @@ public class Cuadrado {
     }
             
    public float calcularArea(){
-    float area=lado*lado;
-    return area;
+    return lado*lado;
     
     }
 

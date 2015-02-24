@@ -26,7 +26,6 @@ public class Triangulo {
         this.altura = altura;
     }
     public float calcularArea(){
-        float area=(base*altura)/2;
-        return area;
+        return (base*altura)/2;
     }
 }

@@ -27,7 +27,6 @@ public class Rectangulo {
         this.LadoMenor = LadoMenor;
     }
     public float calcularArea(){
-        float area=LadoMenor*LadoMayor;
-        return area;
+         return LadoMenor*LadoMayor;
     }
 }
