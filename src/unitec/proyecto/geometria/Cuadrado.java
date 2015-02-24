@@ -19,7 +19,7 @@ public class Cuadrado {
         
     }
             
-    float calcularArea(){
+   public float calcularArea(){
     float area=lado*lado;
     return area;
     
@@ -29,8 +29,11 @@ public class Cuadrado {
         return lado;
     }
 
-    public void setLado(float lado) throws NumeroNoNegativoException {
+    public void setLado(float lado) throws FueraDelRango,NumeroNoNegativoException {
         ValidarValorNoNegativo.validar(lado);
+        ValidarFueraDelRango.rango(lado);
         this.lado = lado;
     }
+    
+     
 }
