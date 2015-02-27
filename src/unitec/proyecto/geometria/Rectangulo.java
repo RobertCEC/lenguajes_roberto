@@ -1,7 +1,7 @@
 package unitec.proyecto.geometria;
 
 
-public class Rectangulo {
+public class Rectangulo implements Superficie{
     
     private float LadoMayor;
     private float LadoMenor;
@@ -27,6 +27,7 @@ public class Rectangulo {
         this.LadoMenor = LadoMenor;
     }
     public float calcularArea(){
-         return LadoMenor*LadoMayor;
+        System.out.print("el area del rectangulo es:");
+        return LadoMenor*LadoMayor;
     }
 }
