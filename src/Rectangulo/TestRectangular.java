@@ -10,7 +10,7 @@ public class TestRectangular {
          
         System.out.println(c.calculatArea());
         
-       Rectangulo d = new Rectangulo(7.8f,8.9f); 
+       Rectangulo d = new Rectangulo(7,8); 
     }
     
 }
