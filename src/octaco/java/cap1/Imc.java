@@ -8,6 +8,11 @@ package octaco.java.cap1;
 
 public class Imc {
    private float estatura;
+
+    public Imc(float estatura, float peso) {
+        this.estatura = estatura;
+        this.peso = peso;
+    }
    private  float peso;
     
   public void setPeso(float peso){
@@ -23,5 +28,16 @@ public float calcular(){
    
     
 }
-    
+public Imc(){
+    peso=12.5f;
+    estatura=22.8f;
+}
+
+    public float getEstatura() {
+        return estatura;
+    }
+
+    public float getPeso() {
+        return peso;
+    }
 }

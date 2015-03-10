@@ -10,7 +10,7 @@ public class TestAreaCua {
         
         System.out.println(c.calculatArea());
         
-        Cuadrado a = new Cuadrado(4);
+        Cuadrado a = new Cuadrado(8);
         
     }
     
