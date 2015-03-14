@@ -4,20 +4,42 @@
  * and open the template in the editor.
  */
 package TareaThread;
-import java.util.*;
+import java.util.Calendar;
 /**
  *
  * @author Carlos
  */
-public class RelojDigital extends javax.swing.JFrame  implements Runnable{
+public class Reloj extends javax.swing.JFrame {
 
     /**
-     * Creates new form RelojDigital
+     * Creates new form Reloj
      */
-    public RelojDigital() {
-        initComponents();
+    public Reloj() {
+    initComponents();
+          Thread t1 = new Thread (new Runnable(){
+           
+       
+public void run(){
+    while(true){
+    try{
+        
+        Thread.sleep(1000);
+        Calendar cal=Calendar.getInstance();
+        int hora=cal.get(Calendar.HOUR_OF_DAY);
+        int min=cal.get(Calendar.MINUTE);
+        int seg=cal.get(Calendar.SECOND);
+        
+        jLabel1.setText(hora+":"+min+":"+seg);
+    }catch(Exception e){}
+    }//aqui termina el While
     }
-      
+       });//aqui termina el Thread
+   
+t1.start();
+    
+    }
+
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -31,23 +53,25 @@ public class RelojDigital extends javax.swing.JFrame  implements Runnable{
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setText("Hora");
+        jLabel1.setFont(new java.awt.Font("Andalus", 1, 24)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 0, 0));
+        jLabel1.setText("jLabel1");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(18, 18, 18)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 182, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(200, Short.MAX_VALUE))
+                .addGap(25, 25, 25)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 278, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(97, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(23, 23, 23)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(222, Short.MAX_VALUE))
+                .addGap(43, 43, 43)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(142, Short.MAX_VALUE))
         );
 
         pack();
@@ -57,9 +81,8 @@ public class RelojDigital extends javax.swing.JFrame  implements Runnable{
      * @param args the command line arguments
      */
     public static void main(String args[]) {
-        /* Set the Nimstarbus look and feel */
-h1.star();        
-//<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+        /* Set the Nimbus look and feel */
+        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
          * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
          */
@@ -71,23 +94,20 @@ h1.star();
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(RelojDigital.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Reloj.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(RelojDigital.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Reloj.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(RelojDigital.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Reloj.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(RelojDigital.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Reloj.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new RelojDigital().setVisible(true);
-               
-               
-                
+                new Reloj().setVisible(true);
             }
         });
     }
@@ -95,20 +115,4 @@ h1.star();
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
-
-    @Override
-    public void run() {
-         while(true){
-        try{
-        Calendar cal=Calendar.getInstance();
-        int hora=cal.get(Calendar.HOUR_OF_DAY);
-        int minuto=cal.get(Calendar.MINUTE);
-        int segundo=cal.get(Calendar.SECOND);
-        jLabel1(+hora+":"+minuto+":"+segundo);
-        Thread.sleep(1000);
-        }catch(Exception e){}
-        
-        }
-    }
-    Thread h1;
 }
