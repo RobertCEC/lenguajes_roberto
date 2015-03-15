@@ -9,10 +9,7 @@ import java.io.File;
 import java.io.FileOutputStream;
 import javax.swing.JFileChooser;
 
-/**
- *
- * @author Jorge Luis
- */
+
 public class Carrusel extends javax.swing.JFrame {
 
     Galeria g;
