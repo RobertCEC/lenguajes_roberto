@@ -53,7 +53,7 @@ t1.start();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setFont(new java.awt.Font("Andalus", 1, 24)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Andalus", 2, 50)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 0, 0));
         jLabel1.setText("jLabel1");
 
