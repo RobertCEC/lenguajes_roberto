@@ -27,13 +27,13 @@ public class Carrusel extends javax.swing.JFrame {
                 int i=0;
                 
                 while(true){
-                    if(i>=5)i=0;
+                    if(i>=8)i=0;
                     jLabel1.setText(g.leerTodas().get(i).getTitulo());
                     jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource(g.leerTodas().get(i).getUrl())));
                     jTextArea1.setText(g.leerTodas().get(i).getDescripcion());
                     try {
                         Thread.sleep(3000);
-                    } catch (InterruptedException ex) {
+                    } catch (InterruptedException e) {
                     }
                     
                     i++;
