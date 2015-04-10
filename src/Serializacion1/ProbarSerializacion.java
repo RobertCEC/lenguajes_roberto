@@ -8,7 +8,8 @@ public class ProbarSerializacion {
         Usuario u=new Usuario();
         u.setEmail("dufflescheese@hotmail.com");
         u.setNombre(null);
-        u.setSueldo(4444);
+        u.setSueldo(44);
+      
         //lo guardamos
         PersistenciaUsuarios per=new PersistenciaUsuarios();
         try{
